@@ -47,7 +47,7 @@ NAME                                    IMAGE REPOSITORY                        
 imagestream.image.openshift.io/apache   default-route-openshift-image-registry.apps-crc.testing/peach/apache   latest   3 minutes ago
 [mahsan@r9 udmy-labs]$
 
->b>[mahsan@r9 udmy-labs]$ oc set volumes deployment/apache --add --type=configmap --configmap-name=content --mount-path=/app </b>
+<b>[mahsan@r9 udmy-labs]$ oc set volumes deployment/apache --add --type=configmap --configmap-name=content --mount-path=/app </b>
 info: Generated volume name: volume-jbgkk
 deployment.apps/apache volume updated
 [mahsan@r9 udmy-labs]$ oc get pods
